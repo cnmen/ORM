@@ -8,12 +8,12 @@
 ##ORM数据库框架用法如下：
 
 ###1.AndroidManifest.xml添加权限：
-// 往sdcard中写入数据的权限<br>
-uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"<br>
-// 在sdcard中创建/删除文件的权限<br>
-uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"<br>
-// 读取sdcard权限<br>
-uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读取sdcard权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 ###2.BaseApplication初始化操作：
         public class BaseApplication extends Application {
