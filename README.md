@@ -1,13 +1,13 @@
 # ORM
-##SQLite数据库框架
+## SQLite数据库框架
 
 版本：2.3.5<br>
 作者：西门提督<br>
 日期：2016-12-15
 
-##ORM数据库框架用法如下：
+## ORM数据库框架用法如下：
 
-###1.AndroidManifest.xml添加权限：
+### 1.AndroidManifest.xml添加权限：
     <!-- 往sdcard中写入数据的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 在sdcard中创建/删除文件的权限 -->
@@ -15,7 +15,7 @@
     <!-- 读取sdcard权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-###2.BaseApplication初始化操作：
+### 2.BaseApplication初始化操作：
         public class BaseApplication extends Application {
 
             public static BaseApplication app;
@@ -65,7 +65,7 @@
             }
         }
 
-###3.实体类示例：
+### 3.实体类示例：
         /**
          * onCreated = "sql"：当第一次创建表需要插入数据时候在此写sql语句
          * onCreated = "CREATE UNIQUE INDEX index_name ON child(name, email)"
@@ -160,7 +160,7 @@
             }
         }
 
-###MainActivity示例：
+### MainActivity示例：
         public class MainActivity extends AppCompatActivity {
 
             private TextView tv;
